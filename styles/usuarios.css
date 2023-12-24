@@ -1,0 +1,19 @@
+span{
+    font-weight: bold;
+}
+label, input, button{
+    margin-bottom: 10px;
+}
+input{
+    background-size: 15px;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+input:invalid {
+    border: 3px solid red;
+    background-image: url('../img/triangleDanger.png'); 
+}
+input:valid {
+    border: 3px solid rgb(5, 250, 5);
+    background-image: url('../img/grenCheck.png'); 
+}

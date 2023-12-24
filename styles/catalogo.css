@@ -1,0 +1,21 @@
+@media screen and (max-width: 856px){
+    .catalogo{
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+@media screen and (min-width: 857px) and (max-width: 1667px){
+    .catalogo{
+        grid-template-columns: repeat(4, 1fr);
+    } 
+}
+@media screen and (min-width: 1668px){
+    .catalogo{
+        grid-template-columns: repeat(5, 1fr);
+    } 
+}
+.catalogo{
+    display: grid;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(50px, auto);
+}
+

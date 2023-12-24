@@ -1,0 +1,63 @@
+.color1 {color: #0b87a3;}
+.color2 {color: #ffbe9d;}
+.color3 {color: #ffe978;}
+.color4 {color:#07c79d;color: #08e4b4;}
+.color5 {color: #0a3b9b; color: #526da0;}
+
+body{
+    background-color: #526da0;
+}
+
+h1,h2,li,a,footer p{
+    color: #ffbe9d;
+    font-family: 'Mate SC', serif;
+}
+p, label, input{
+    font-family: 'Lato', sans-serif;
+    color: #08e4b4;
+}
+
+article{
+    background-color: #08e4b4;
+    border: 5px solid #ffe978;
+}
+article p,h3{
+    color: #526da0;
+}
+.precio{
+    background-color: #ffbe9d;
+    color: #526da0;
+}
+.banner{
+    background-color: #ffbe9d;
+}
+input, textarea{
+    background-color: #526da0;
+    color: #08e4b4;
+    border-color: #ffbe9d;
+}
+button{
+    background-color: #ffe978;
+    border-color: #08e4b4;
+    color: #526da0;
+    font-weight: bold;
+}
+.checkout {
+    background-color: #526da0;
+    border:none;
+    color:#ffbe9d;
+}
+input::placeholder{
+    color:#08e4b4;
+}
+button a{
+    color: #526da0;
+}
+.sesion li, .menu, .banner, footer{
+    background-color: #0b87a3;
+}
+table, table th, table td {
+	border-color: #ffbe9d;
+    color: #08e4b4;
+}
+

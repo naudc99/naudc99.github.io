@@ -1,0 +1,31 @@
+@media screen and (max-width: 657px){
+
+    .servicios{
+        justify-content:flex-start;
+    }
+}
+@media screen and (min-width: 857px) and (max-width: 1667px){
+    .servicios{
+        justify-content:flex-start;
+    }
+}
+.noticias{
+    flex-direction: column;
+}
+.noticias article{
+    overflow: auto;
+    width: 75%;
+}
+.redes_sociales article{
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redes_sociales article:last-child{
+    display: inline-block;
+}
+.redes_sociales img{
+    margin-top: 15px;
+}
+

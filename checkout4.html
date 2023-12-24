@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link id="cambiarEstilo" rel="stylesheet" href="styles/light.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <h1>Agencia de viajes</h1>
+        <button onclick="cambiarModo()">Cambiar modo Día/Noche</button>
+        <script>
+            function cambiarModo(){
+                const cambio=document.querySelector("#cambiarEstilo");
+                if(cambio.href.includes("styles/light.cs")){
+                    cambio.href="styles/dark.css";
+                }
+                else{
+                    cambio.href="styles/light.css";
+                }
+            }
+            const radioCuentaBancaria=document.querySelector("#radioCuentaBancaria");
+            const cuentaBancaria=document.querySelector("#cuentaBancaria");
+            cuentaBancaria.style.display="none";
+
+            const radioTarjeta=document.querySelector("#radioTarjeta");
+            const tarjeta=document.querySelector("#tarjeta");
+            tarjeta.style.display="none";
+
+            const radioPaypal=document.querySelector("#radioPaypal");
+            const paypal=document.querySelector("#paypal");
+            paypal.style.display="none";
+
+
+            if(radioCuentaBancaria.checked===true){
+
+            }
+            else{
+
+            }
+        </script>
+
+        <ul class="sesion">
+            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li>Cerrar sesión</li>
+        </ul>
+        <ul class="menu">
+            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="catalogo.html">Viajes</a></li>
+            <li>Paquetes</li>
+            <li>¿Quiénes somos?</li>
+        </ul>
+        <p><a href="checkout1.html">Productos contratados</a>><a href="checkout2.html">Cupones y descuentos</a>><a href="checkout3.html">Resumen</a>><a href="checkout4.html">Métodos de pago</a></p>
+
+    </header>
+    <main>
+        <h2>Métodos de pago</h2>
+        <section>
+            <form>
+                <label>Escoja un método de pago: </label>
+                <br>
+                <label>Cuenta bancaria</label>
+                <input type="radio" id="radioCuentaBancaria">
+                <label>Tarjeta de crédito o débito</label>
+                <input type="radio" id="radioTarjeta">
+                <label>Paypal</label>
+                <input type="radio" id="radioPaypal">
+                
+                <div id="cuentaBancaria">
+                    <label>Introduzca su cuenta bancaria: </label>
+                    <input type="text">
+                </div>
+
+                <div id="tarjeta">
+                    <label>Introduzca el número de su tarjeta: </label>
+                    <input type="text">
+                </div>
+
+                <div id="paypal">
+                    <label>Introduzca</label>
+                    <input type="text">
+                </div>
+                <label>Elige una opción de envío: </label>
+                <br>
+                <label>Esta cuenta</label>
+                <input type="radio" id="radioCuenta">
+                <label>Regalo para la cuenta de un amigo</label>
+                <input type="radio" id="radioRegalo"> 
+
+                <div id="amigo">
+                    <label>Introduzca la dirección de correo correspondiente: </label>
+                    <input type="text">
+                </div>
+                <div>
+                    <button><a href="checkout3.html">Anterior</a></button>
+                    <button>Finalizar compra</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Agencia de Viajes &copy; 2023</p>
+    </footer>
+</body>
+</html>

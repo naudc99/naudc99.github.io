@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link id="cambiarEstilo" rel="stylesheet" href="styles/light.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <h1>Agencia de viajes</h1>
+        <button onclick="cambiarModo()">Cambiar modo Día/Noche</button>
+        <script>
+            function cambiarModo(){
+                const cambio=document.querySelector("#cambiarEstilo");
+                if(cambio.href.includes("styles/light.cs")){
+                    cambio.href="styles/dark.css";
+                }
+                else{
+                    cambio.href="styles/light.css";
+                }
+            }
+        </script>
+        <ul class="sesion">
+            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li>Cerrar sesión</li>
+        </ul>
+        <ul class="menu">
+            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="catalogo.html">Viajes</a></li>
+            <li>Paquetes</li>
+            <li>¿Quiénes somos?</li>
+        </ul>
+        <p><a href="checkout1.html">Productos contratados</a>><a href="checkout2.html">Cupones y descuentos</a></p>
+
+    </header>
+    <main>
+        <h2>Cupones y descuentos</h2>
+        <section>
+            <form>
+                <label>Introduzca el cupón código o promocional que desee usar para el descuento: </label>
+                <br>
+                <input type="text" placeholder="Indique su cupón">
+                <div>
+                    <button><a href="checkout1.html">Anterior</a> </button>
+                    <button><a href="checkout3.html">Siguiente <img src="img/flechaDer.png"></a></button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Agencia de Viajes &copy; 2023</p>
+    </footer>
+</body>
+</html>

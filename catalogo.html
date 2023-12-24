@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/catalogo.css">
+    <link id="cambiarEstilo" rel="stylesheet" href="styles/light.css">
+    <title>Catálogo</title>
+</head>
+<body>
+    <header>
+        <h1>Agencia de viajes</h1>
+        <button onclick="cambiarModo()">Cambiar Modo Día/Noche</button>
+        <script>
+            function cambiarModo(){
+                const cambio=document.querySelector("#cambiarEstilo");
+                if(cambio.href.includes("styles/light.cs")){
+                    cambio.href="styles/dark.css";
+                }
+                else{
+                    cambio.href="styles/light.css";
+                }
+            }
+        </script>
+        <ul class="sesion">
+            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li>Cerrar sesión</li>
+        </ul>
+        <ul class="menu">
+            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="catalogo.html">Viajes</a></li>
+            <li>Paquetes</li>
+            <li>¿Quiénes somos?</li>
+        </ul>
+    </header>
+    <main>
+        <h2>Top 3 novedades</h2>
+        <section class="banner pointer">
+            <article>
+                <img src="img/New-York-skyline.webp">
+                <h3>Nueva York</h3>
+                <p class="precio">Desde 600€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>  
+            </article>
+            <article>
+                <img src="img/copenhage.jpg">
+                <h3>Copenhage</h3>
+                <p class="precio">Desde 200€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+            <article>
+                <img src="img/praga.jpg">
+                <h3>Praga</h3>
+                <p class="precio">Desde 150€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+        </section>
+
+        <section class="catalogo pointer">
+            <article>
+                <img src="img/London.jpeg">
+                <h3>Londres</h3>
+                <p class="precio">Desde 400€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+            <article>
+                <img src="img/berlin.jpg">
+                <h3>Berlin</h3>
+                <p class="precio">Desde 250€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+            <article>
+                <img src="img/dubai.jpg">
+                <h3>Dubai</h3>
+                <p class="precio">Desde 700€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+            <article>
+                <img src="img/paris.jpg">
+                <h3>París</h3>
+                <p class="precio">Desde 400€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+            <article>
+                <img src="img/hongkong.jpeg">
+                <h3>Hong Kong</h3>
+                <p class="precio">Desde 600€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+            <article>
+                <img src="img/singapur.jpg">
+                <h3>Singapur</h3>
+                <p class="precio">Desde 650€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+            <article>
+                <img src="img/tokyo.webp">
+                <h3>Tokyo</h3>
+                <p class="precio">Desde 500€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+            <article>
+                <img src="img/toronto.jpg">
+                <h3>Toronto</h3>
+                <p class="precio">Desde 580€</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>
+            </article>
+        </section>   
+    </main>
+    <footer>
+        <p>Agencia de Viajes &copy; 2023</p>
+    </footer>
+</body>
+</html>

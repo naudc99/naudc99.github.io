@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link id="cambiarEstilo" rel="stylesheet" href="styles/light.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <h1>Agencia de viajes</h1>
+        <button onclick="cambiarModo()">Cambiar modo Día/Noche</button>
+        <script>
+            function cambiarModo(){
+                const cambio=document.querySelector("#cambiarEstilo");
+                if(cambio.href.includes("styles/light.cs")){
+                    cambio.href="styles/dark.css";
+                }
+                else{
+                    cambio.href="styles/light.css";
+                }
+            }
+        </script>
+        <ul class="sesion">
+            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li>Cerrar sesión</li>
+        </ul>
+        <ul class="menu">
+            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="catalogo.html">Viajes</a></li>
+            <li>Paquetes</li>
+            <li>¿Quiénes somos?</li>
+        </ul>
+        <p><a href="checkout1.html">Productos contratados</a></p>
+
+    </header>
+    <main>
+        <h2>Productos contratados</h2>
+        <section>
+            <article class="checkout">
+                <h2>Londres</h2>
+                <p class="precio original">Desde 400€</p>
+                <p class="precio descuento">Ahora desde 230€</p>
+                <img src="img/London.jpeg">
+                <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div>
+                    <label>Número de viajeros: </label>
+                    <input type="number" value="4">     
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+                <div>
+                    <button>Quitar producto de la compra</button>
+                    <button>Quitar producto del carrito</button>
+                </div>  
+            </article>
+
+            <article class="checkout">
+                <h2>Cophenage</h2>
+                <p class="precio">Desde 200€</p>
+                <img src="img/copenhage.jpg">
+                <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div>
+                    <label>Número de viajeros: </label>
+                    <input type="number" value="1">     
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+                <div>
+                    <button>Quitar producto de la compra</button>
+                    <button>Quitar producto del carrito</button>
+                </div>
+            </article>
+            
+            <article class="checkout">
+                <h2>Praga</h2>
+                <p class="precio">Desde 150€</p>
+                <img src="img/praga.jpg">
+                <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div>
+                    <label>Número de viajeros: </label>
+                    <input type="number" value="2">     
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+                <div>
+                    <button>Quitar producto de la compra</button>
+                    <button>Quitar producto del carrito</button>
+                </div>
+            </article>     
+        </section>
+        <button><a href="checkout2.html">Continuar <img src="img/flechaDer.png"></a></button>
+
+        <h2>Productos relacionados</h2>
+        <section class="productos-relacionados">
+            <article>
+                <h3>París</h3>
+                <p class="precio">Desde 400€</p>
+                <img src="img/paris.jpg">
+            </article>
+            <article>
+                <h3>Berlín</h3>
+                <p class="precio">Desde 250€</p>
+                <img src="img/berlin.jpg">
+            </article>
+            <article>
+                <h3>Tokyo</h3>
+                <p class="precio">Desde 500€</p>
+                <img src="img/tokyo.webp">
+            </article>
+            <article>
+                <h3>Nueva York</h3>
+                <p class="precio">Desde 600€</p>
+                <img src="img/New-York-skyline.webp">
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Agencia de Viajes &copy; 2023</p>
+    </footer>
+</body>
+</html>

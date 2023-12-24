@@ -1,0 +1,34 @@
+.precio{
+    position: relative;
+    width: 30%;
+    margin-left: 33%;
+}
+img{
+    width: 30%;
+}
+section{
+    flex-direction: column;
+}
+div{
+    margin-bottom: 3%;
+}
+input{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.productos-relacionados{
+    flex-direction: row;
+}
+.original{
+    text-decoration: line-through;
+}
+.checkout{
+    width: 50%;
+    height: 50%;
+}
+.resumen{
+    flex-direction: row;
+}
+a img{
+    width: 20px;
+}

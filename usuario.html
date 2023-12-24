@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/usuarios.css">
+    <link id="cambiarEstilo" rel="stylesheet" href="styles/light.css">
+
+    <title>Perfil de usuario</title>
+</head>
+<body>
+    <header>
+        <h1>Agencia de viajes</h1>
+        <button onclick="cambiarModo()">Cambiar Modo Día/Noche</button>
+        <script>
+            function cambiarModo(){
+                const cambio=document.querySelector("#cambiarEstilo");
+                if(cambio.href.includes("styles/light.cs")){
+                    cambio.href="styles/dark.css";
+                }
+                else{
+                    cambio.href="styles/light.css";
+                }
+            }
+        </script>
+        <ul class="sesion">
+            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li>Cerrar sesión</li>
+        </ul>
+        <ul class="menu">
+            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="catalogo.html">Viajes</a></li>
+            <li>Paquetes</li>
+            <li>¿Quiénes somos?</li>
+        </ul>
+    </header>
+    <main>
+        <h1>Ficha personal del usuario</h1>
+        <h2>Datos del usuario</h2>
+        <p>Nombre: <span>Nombre de Usuario</span></p>
+        <p>Nombre: <span>Nombre</span></p>
+        <p>Teléfono: <span>655236547</span></p>
+        <p>Correo electrónico: <span>usuario@correo.com</span></p>
+
+        <h2>Actualizar perfil</h2>
+        <form>
+            <label>Cambio de teléfono: </label>
+            <input id="telefono" name="telefono" required pattern="(9[1-8]|8[1-8]|6[1-9]|7[0-4])\d{7}"/>
+            <button>Cambiar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Agencia de Viajes &copy; 2023</p>
+    </footer>
+</body>
+</html>

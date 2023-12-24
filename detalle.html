@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/detalle.css">
+    <link id="cambiarEstilo" rel="stylesheet" href="styles/light.css">
+    <title>Detalle del producto</title>
+</head>
+<body>
+    <header>
+        <h1>Agencia de viajes</h1>
+        <button onclick="cambiarModo()">Cambiar modo Día/Noche</button>
+        <script>
+            function cambiarModo(){
+                const cambio=document.querySelector("#cambiarEstilo");
+                if(cambio.href.includes("styles/light.cs")){
+                    cambio.href="styles/dark.css";
+                }
+                else{
+                    cambio.href="styles/light.css";
+                }
+            }
+        </script>
+        <ul class="sesion">
+            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li>Cerrar sesión</li>
+        </ul>
+        <ul class="menu">
+            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="catalogo.html">Viajes</a></li>
+            <li>Paquetes</li>
+            <li>¿Quiénes somos?</li>
+        </ul>
+    </header>
+    <main>
+        <section class="detalle-producto">
+            <img src="img/London.jpeg">
+            <div>
+                <h2>Londres</h2>
+                <p class="precio">Desde 650€</p>
+                <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Condiciones de venta: Gastos de envío y detalles adicionales.</p>
+                <div class="reputacion">
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                    <span class="estrella"></span>
+                </div>  
+                
+                <table>
+                    <thead>
+                        <th>Característica</th>
+                        <th>Detalle</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Primera característica</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Segunda característica</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Tercera característica</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <label>Número de viajeros: </label>
+                    <input type="number">
+                    <form>
+                        <label>Fecha Inicio: </label>
+                        <input type="date">
+                        <br>
+                        <label>Fecha Llegada: </label>
+                        <input type="date">
+                    </form>       
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <h2>Álbum de miniaturas</h2>
+        <section class="miniatura">
+            <img src="img/London.jpeg">
+            <img src="img/London.jpeg">
+            <img src="img/London.jpeg">
+            <img src="img/London.jpeg">
+            <img src="img/London.jpeg">
+            <img src="img/London.jpeg">
+            <img src="img/London.jpeg">
+            <img src="img/London.jpeg">
+        </section>
+
+        <h2>Comentarios</h2>
+        <section>
+            <article>
+                <h3>Autor</h3>
+                <p>Descripción: Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            </article>
+            <article>
+                <h3>Autor</h3>
+                <p>Descripción: Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            </article>
+            <article>
+                <h3>Autor</h3>
+                <p>Descripción: Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            </article>
+        </section>
+
+        <h2>Consultar dudas</h2>
+        <section class="dudas">
+            <form>
+                <label>Tu consulta:</label> 
+                <br>
+                <img src="img/ayuda.png">
+                <textarea name="consulta" rows="4" cols="50"></textarea>
+                <div>
+                    <button type="submit">Enviar consulta</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Agencia de Viajes &copy; 2023</p>
+    </footer>
+</body>
+</html>
