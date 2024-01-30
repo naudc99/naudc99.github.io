@@ -24,28 +24,31 @@
             }
         </script>
         <ul class="sesion">
-            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li> <a href="usuario.html">Usuario<img class="foto-perfil" src="img/perfil.png" alt="Foto de perfil"></a></li>
             <li>Cerrar sesión</li>
         </ul>
+        <a class="carrito" href="checkout1.html"><img src="img/carrito.png" alt="Carrito de compra"></a>
+
         <ul class="menu">
-            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Viajes</a></li>
             <li>Paquetes</li>
-            <li>¿Quiénes somos?</li>
+            <li><a href="informacion.html">¿Quiénes somos?</a></li>
+
         </ul>
-        <p><a href="checkout1.html">Productos contratados</a>><a href="checkout2.html">Cupones y descuentos</a></p>
+        <p><a href="checkout1.html">Productos contratados y relacionados </a>><a href="checkout2.html"> <strong>Cupones y descuentos</strong></a></p>
 
     </header>
     <main>
-        <h2>Cupones y descuentos</h2>
+        <h2><img src="img/cupon.png" alt="Imagen decorativa para cupones">Cupones y descuentos<img src="img/cupon.png" alt="Imagen decorativa para cupones"></h2>
         <section>
             <form>
-                <label>Introduzca el cupón código o promocional que desee usar para el descuento: </label>
+                <label for="idCupon">Introduzca el cupón código o promocional que desee usar para el descuento: </label>
                 <br>
-                <input type="text" placeholder="Indique su cupón">
+                <input type="text" name="cupon" id="idCupon" placeholder="Indique su cupón">
                 <div>
-                    <button><a href="checkout1.html">Anterior</a> </button>
-                    <button><a href="checkout3.html">Siguiente <img src="img/flechaDer.png"></a></button>
+                    <a href="checkout1.html" class="boton"><img src="img/flechaIzq.png" alt="Flecha izquierda"> Anterior</a>
+                    <a href="checkout3.html" class="boton">Siguiente <img src="img/flechaDer.png" alt="Flecha derecha"></a>
                 </div>
             </form>
         </section>

@@ -24,19 +24,22 @@
             }
         </script>
         <ul class="sesion">
-            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li> <a href="usuario.html">Usuario<img class="foto-perfil" src="img/perfil.png" alt="Foto de perfil"></a></li>
             <li>Cerrar sesión</li>
         </ul>
+        <a class="carrito" href="checkout1.html"><img src="img/carrito.png" alt="Carrito de compra"></a>
+
         <ul class="menu">
-            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Viajes</a></li>
             <li>Paquetes</li>
-            <li>¿Quiénes somos?</li>
+            <li><a href="informacion.html">¿Quiénes somos?</a></li>
+
         </ul>
     </header>
     <main>
         <section class="detalle-producto">
-            <img src="img/London.jpeg">
+            <img src="img/London.jpeg" alt="Londres">
             <div>
                 <h2>Londres</h2>
                 <p class="precio">Desde 650€</p>
@@ -52,9 +55,11 @@
                 
                 <table>
                     <thead>
-                        <th>Característica</th>
-                        <th>Detalle</th>
-                    </thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Detalle</th>
+                        </tr>
+                        
                     <tbody>
                         <tr>
                             <td>Primera característica</td>
@@ -71,14 +76,14 @@
                     </tbody>
                 </table>
                 <div>
-                    <label>Número de viajeros: </label>
-                    <input type="number">
+                    <label for="idViajeros">Número de viajeros: </label>
+                    <input type="number" name="viajeros" id="idViajeros">
                     <form>
-                        <label>Fecha Inicio: </label>
-                        <input type="date">
+                        <label for="idFechaInicio">Fecha Inicio: </label>
+                        <input type="date" name="fechaInicio" id="idFechaInicio">
                         <br>
-                        <label>Fecha Llegada: </label>
-                        <input type="date">
+                        <label for="idFechaLlegada">Fecha Llegada: </label>
+                        <input type="date" name="fechaLlegada" id="idFechaLlegada">
                     </form>       
                     <button>Comprar</button>
                 </div>
@@ -87,14 +92,14 @@
 
         <h2>Álbum de miniaturas</h2>
         <section class="miniatura">
-            <img src="img/London.jpeg">
-            <img src="img/London.jpeg">
-            <img src="img/London.jpeg">
-            <img src="img/London.jpeg">
-            <img src="img/London.jpeg">
-            <img src="img/London.jpeg">
-            <img src="img/London.jpeg">
-            <img src="img/London.jpeg">
+            <img src="img/London.jpeg" alt="Londres">
+            <img src="img/London.jpeg" alt="Londres">
+            <img src="img/London.jpeg" alt="Londres">
+            <img src="img/London.jpeg" alt="Londres">
+            <img src="img/London.jpeg" alt="Londres">
+            <img src="img/London.jpeg" alt="Londres">
+            <img src="img/London.jpeg" alt="Londres">
+            <img src="img/London.jpeg" alt="Londres">
         </section>
 
         <h2>Comentarios</h2>
@@ -116,10 +121,10 @@
         <h2>Consultar dudas</h2>
         <section class="dudas">
             <form>
-                <label>Tu consulta:</label> 
+                <label for="idConsulta">Tu consulta:</label> 
                 <br>
-                <img src="img/ayuda.png">
-                <textarea name="consulta" rows="4" cols="50"></textarea>
+                <img src="img/ayuda.png" alt="Ayuda">
+                <textarea id="idConsulta" name="consulta" rows="4" cols="50"></textarea>
                 <div>
                     <button type="submit">Enviar consulta</button>
                 </div>

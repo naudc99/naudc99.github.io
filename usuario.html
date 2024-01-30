@@ -25,14 +25,16 @@
             }
         </script>
         <ul class="sesion">
-            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li> <a href="usuario.html">Usuario<img class="foto-perfil" src="img/perfil.png" alt="Foto de perfil"></a></li>
             <li>Cerrar sesión</li>
         </ul>
+        <a class="carrito" href="checkout1.html"><img src="img/carrito.png" alt="Carrito de compra"></a> 
         <ul class="menu">
-            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Viajes</a></li>
             <li>Paquetes</li>
-            <li>¿Quiénes somos?</li>
+            <li><a href="informacion.html">¿Quiénes somos?</a></li>
+
         </ul>
     </header>
     <main>
@@ -45,8 +47,8 @@
 
         <h2>Actualizar perfil</h2>
         <form>
-            <label>Cambio de teléfono: </label>
-            <input id="telefono" name="telefono" required pattern="(9[1-8]|8[1-8]|6[1-9]|7[0-4])\d{7}"/>
+            <label for="idTelefono">Cambio de teléfono:</label>
+            <input id="idTelefono" name="telefono" required pattern="(9[1-8]|8[1-8]|6[1-9]|7[0-4])\d{7}"/>
             <button>Cambiar</button>
         </form>
     </main>

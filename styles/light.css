@@ -45,11 +45,21 @@ button{
     color: #001d96;
     font-weight: bold;
 }
+.boton{
+    background-color: #7ced89;
+    border: 2px solid #e1dd75;
+    color: #001d96;
+    font-weight: bold;
+}
 
 .checkout {
     background-color: #eddcff;
     border:none;
     color:#001d96;
+}
+.original{
+    color: #001d96;
+    background-color: #eddcff;
 }
 input::placeholder{
     color:#001d96;

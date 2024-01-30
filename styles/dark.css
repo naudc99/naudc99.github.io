@@ -16,7 +16,6 @@ p, label, input{
     font-family: 'Lato', sans-serif;
     color: #08e4b4;
 }
-
 article{
     background-color: #08e4b4;
     border: 5px solid #ffe978;
@@ -27,6 +26,13 @@ article p,h3{
 .precio{
     background-color: #ffbe9d;
     color: #526da0;
+}
+.original{
+    color: #ffbe9d;
+    background-color: #526da0;
+}
+.checkout p:not(.precio){
+    color: #08e4b4;
 }
 .banner{
     background-color: #ffbe9d;
@@ -47,6 +53,7 @@ button{
     border:none;
     color:#ffbe9d;
 }
+
 input::placeholder{
     color:#08e4b4;
 }

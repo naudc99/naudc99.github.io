@@ -22,83 +22,130 @@
                     cambio.href="styles/light.css";
                 }
             }
-            const radioCuentaBancaria=document.querySelector("#radioCuentaBancaria");
-            const cuentaBancaria=document.querySelector("#cuentaBancaria");
-            cuentaBancaria.style.display="none";
+            
+            const carga_datos = () => {
+                const DOM={
+                    radioCuenta: document.querySelector("#radioCuentaBancaria"),
+                    cuenta: document.querySelector("#cuentaBancaria"),
+                    radioTarjeta: document.querySelector("#radioTarjeta"),
+                    tarjeta: document.querySelector("#tarjeta"),
+                    radioPaypal: document.querySelector("#radioPaypal"),
+                    paypal: document.querySelector("#paypal"),
+                    radioMiCuenta: document.querySelector("#radioMiCuenta"),
+                    radioRegalo: document.querySelector("#radioRegalo"),
+                    amigo: document.querySelector("#amigo")
 
-            const radioTarjeta=document.querySelector("#radioTarjeta");
-            const tarjeta=document.querySelector("#tarjeta");
-            tarjeta.style.display="none";
+                }
+                
+                DOM.cuenta.style.display = 'none';
+                DOM.tarjeta.style.display = 'none';
+                DOM.paypal.style.display = 'none';
+                DOM.amigo.style.display = 'none';
 
-            const radioPaypal=document.querySelector("#radioPaypal");
-            const paypal=document.querySelector("#paypal");
-            paypal.style.display="none";
-
-
-            if(radioCuentaBancaria.checked===true){
-
+                DOM.radioCuenta.addEventListener('change', function () {
+                    DOM.tarjeta.style.display = 'none';
+                    DOM.paypal.style.display = 'none';
+                    DOM.cuenta.style.display = this.checked ? 'block' : 'none';
+                });
+                DOM.radioTarjeta.addEventListener('change', function () {
+                    DOM.cuenta.style.display = 'none';
+                    DOM.paypal.style.display = 'none';
+                    DOM.tarjeta.style.display = this.checked ? 'block' : 'none';
+                });
+                DOM.radioPaypal.addEventListener('change', function () {
+                    DOM.cuenta.style.display = 'none';
+                    DOM.tarjeta.style.display = 'none';
+                    DOM.paypal.style.display = this.checked ? 'block' : 'none';
+                });
+                DOM.radioMiCuenta.addEventListener('change', function () {
+                    DOM.amigo.style.display = 'none';
+                });
+                DOM.radioRegalo.addEventListener('change', function () {
+                    DOM.amigo.style.display = this.checked ? 'block' : 'none';
+                });
             }
-            else{
-
-            }
+            const iniciar = () => {
+                carga_datos();
+            };
+            window.addEventListener("load", iniciar, false);
         </script>
 
         <ul class="sesion">
-            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li> <a href="usuario.html">Usuario<img class="foto-perfil" src="img/perfil.png" alt="Foto de perfil"></a></li>
             <li>Cerrar sesión</li>
         </ul>
+        <a class="carrito" href="checkout1.html"><img src="img/carrito.png" alt="Carrito de compra"></a>
+
         <ul class="menu">
-            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Viajes</a></li>
             <li>Paquetes</li>
-            <li>¿Quiénes somos?</li>
+            <li><a href="informacion.html">¿Quiénes somos?</a></li>
         </ul>
-        <p><a href="checkout1.html">Productos contratados</a>><a href="checkout2.html">Cupones y descuentos</a>><a href="checkout3.html">Resumen</a>><a href="checkout4.html">Métodos de pago</a></p>
+        <p><a href="checkout1.html">Productos contratados y relacionados </a>><a href="checkout2.html"> Cupones y descuentos </a>><a href="checkout3.html"> Resumen </a>><a href="checkout4.html"> <strong>Métodos de pago y opciones de envío</strong></a></p>
 
     </header>
     <main>
-        <h2>Métodos de pago</h2>
         <section>
             <form>
-                <label>Escoja un método de pago: </label>
+                <h2>Métodos de pago</h2>
                 <br>
-                <label>Cuenta bancaria</label>
-                <input type="radio" id="radioCuentaBancaria">
-                <label>Tarjeta de crédito o débito</label>
-                <input type="radio" id="radioTarjeta">
-                <label>Paypal</label>
-                <input type="radio" id="radioPaypal">
+                <label for="radioCuentaBancaria">Cuenta bancaria <img src="img/banco.png" alt="Banco"></label>
+                <input type="radio" name="pago" id="radioCuentaBancaria">
+                <label for="radioTarjeta">Tarjeta de crédito o débito <img src="img/tarjeta.png" alt="Tarjeta"></label>
+                <input type="radio" name="pago" id="radioTarjeta">
+                <label for="radioPaypal">Paypal <img src="img/paypal.png" alt="Paypal"></label>
+                <input type="radio" name="pago" id="radioPaypal">
                 
                 <div id="cuentaBancaria">
-                    <label>Introduzca su cuenta bancaria: </label>
-                    <input type="text">
+                    <label for="idcuenta">Introduzca su cuenta bancaria:</label>
+                    <br>
+                    <input type="text" id="idcuenta" placeholder="Cuenta bancaria">
                 </div>
 
                 <div id="tarjeta">
-                    <label>Introduzca el número de su tarjeta: </label>
-                    <input type="text">
+                    <label for="nombre">Introduzca el nombre completo del titular:</label>
+                    <br>
+                    <input type="text" id="nombre" placeholder="Nombre del titular">
+                    <br>
+
+                    <label for="nTarjeta">Introduzca el número de tarjeta:</label>
+                    <br>
+                    <input type="text" id="nTarjeta" placeholder="Número de tarjeta">
+                    <br>
+
+                    <label for="fechaExp">Introduzca la fecha de expiración:</label>
+                    <br>
+                    <input type="text" id="fechaExp" placeholder="Fecha de expiración">
+                    <br>
+
+                    <label for="codigo">Introduzca el código de seguridad:</label>
+                    <br>
+                    <input type="text" id="codigo" placeholder="Código de 3 dígitos">
                 </div>
 
                 <div id="paypal">
-                    <label>Introduzca</label>
-                    <input type="text">
+                    <label for="idpaypal">Introduzca su paypal:</label>
+                    <br>
+                    <input type="text" id="idpaypal" placeholder="Paypal">
                 </div>
-                <label>Elige una opción de envío: </label>
-                <br>
-                <label>Esta cuenta</label>
-                <input type="radio" id="radioCuenta">
-                <label>Regalo para la cuenta de un amigo</label>
-                <input type="radio" id="radioRegalo"> 
 
+                <h2>Opciones de envío</h2>
+                <label>Elige una opción de envío:</label>
+                <br>
+                <label for="radioMiCuenta">Esta cuenta <img src="img/perfil.png" alt="Imagen de perfil"></label>
+                <input type="radio" name="envio" id="radioMiCuenta">
+                <label for="radioRegalo">Regalo para un amigo <img src="img/regalo.png" alt="Regalo"></label>
+                <input type="radio" name="envio" id="radioRegalo"> 
                 <div id="amigo">
-                    <label>Introduzca la dirección de correo correspondiente: </label>
-                    <input type="text">
+                    <label for="email">Introduzca el email correspondiente:</label>
+                    <br>
+                    <input type="email" id="email" placeholder="Email">
                 </div>
                 <div>
-                    <button><a href="checkout3.html">Anterior</a></button>
-                    <button>Finalizar compra</button>
+                    <a href="checkout3.html" class="boton"><img src="img/flechaIzq.png" alt="Flecha izquierda"> Anterior</a>
+                    <button>Finalizar compra <img src="img/finalizarCompra.png" alt="Finalizar Compra"></button>
                 </div>
-                
             </form>
         </section>
     </main>

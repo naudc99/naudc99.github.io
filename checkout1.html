@@ -24,96 +24,102 @@
             }
         </script>
         <ul class="sesion">
-            <li> <a href="usuario.html">Usuario<img class="foto_perfil" src="img/perfil.png"></a></li>
+            <li> <a href="usuario.html">Usuario<img class="foto-perfil" src="img/perfil.png" alt="Foto de perfil"></a></li>
             <li>Cerrar sesión</li>
         </ul>
+        <a class="carrito" href="checkout1.html"><img src="img/carrito.png" alt="Carrito de compra"></a>
+
         <ul class="menu">
-            <li><a href="landing-page.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="catalogo.html">Viajes</a></li>
             <li>Paquetes</li>
-            <li>¿Quiénes somos?</li>
-        </ul>
-        <p><a href="checkout1.html">Productos contratados</a></p>
+            <li><a href="informacion.html">¿Quiénes somos?</a></li>
 
+        </ul>
+        <p><a href="checkout1.html"><strong>Productos contratados y relacionados</strong></a></p>
     </header>
     <main>
         <h2>Productos contratados</h2>
         <section>
             <article class="checkout">
-                <h2>Londres</h2>
-                <p class="precio original">Desde 400€</p>
-                <p class="precio descuento">Ahora desde 230€</p>
-                <img src="img/London.jpeg">
-                <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div>
-                    <label>Número de viajeros: </label>
-                    <input type="number" value="4">     
-                    <button>-</button>
-                    <button>+</button>
-                </div>
-                <div>
-                    <button>Quitar producto de la compra</button>
-                    <button>Quitar producto del carrito</button>
-                </div>  
+                    <h2>Londres</h2>
+                    <p class="precio original">Desde 400€</p>
+                    <img class="imagen-descuento" src="img/descuento.png" alt="Imagen decorativa para el descuento">
+                    <p class="precio">Ahora desde 230€</p>
+                    <img src="img/London.jpeg" alt="Londres">
+                    <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div> 
+                <form>
+                    <label for="idViajeros1">Número de viajeros: </label>
+                    <input type="number" value="4" id="idViajeros1" class="valor">     
+                    <button type="button" class="decrementar">-</button>
+                    <button type="button" class="incrementar">+</button>
+                    <div>
+                        <button>Quitar producto<img src="img/eliminar.png" alt="Quitar producto"></button>
+                        <button>Eliminar del carrito<img src="img/carrito.png" alt="Quitar producto del carrito"></button>
+                    </div> 
+                </form>   
             </article>
 
             <article class="checkout">
                 <h2>Cophenage</h2>
                 <p class="precio">Desde 200€</p>
-                <img src="img/copenhage.jpg">
+                <img src="img/copenhage.jpg" alt="Cophenage">
                 <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div>
-                    <label>Número de viajeros: </label>
-                    <input type="number" value="1">     
-                    <button>-</button>
-                    <button>+</button>
-                </div>
-                <div>
-                    <button>Quitar producto de la compra</button>
-                    <button>Quitar producto del carrito</button>
-                </div>
+                <form>
+                    <label for="idViajeros2">Número de viajeros: </label>
+                    <input type="number" value="1" id="idViajeros2" class="valor">     
+                    <button type="button" class="decrementar">-</button>
+                    <button type="button" class="incrementar">+</button>
+                    <div>
+                        <button>Quitar producto<img src="img/eliminar.png" alt="Quitar producto"></button>
+                        <button>Eliminar del carrito<img src="img/carrito.png" alt="Quitar producto del carrito"></button>
+                    </div>
+                </form>
             </article>
             
             <article class="checkout">
                 <h2>Praga</h2>
                 <p class="precio">Desde 150€</p>
-                <img src="img/praga.jpg">
+                <img src="img/praga.jpg" alt="Praga">
                 <p>Descripción del producto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div>
-                    <label>Número de viajeros: </label>
-                    <input type="number" value="2">     
-                    <button>-</button>
-                    <button>+</button>
-                </div>
-                <div>
-                    <button>Quitar producto de la compra</button>
-                    <button>Quitar producto del carrito</button>
-                </div>
+                <form>
+                    <label for="idViajeros3">Número de viajeros: </label>
+                    <input type="number" value="2" id="idViajeros3" class="valor">     
+                    <button type="button" class="decrementar">-</button>
+                    <button type="button" class="incrementar">+</button>
+                    <div>
+                        <button>Quitar producto<img src="img/eliminar.png" alt="Quitar producto"></button>
+                        <button>Eliminar del carrito<img src="img/carrito.png" alt="Quitar producto del carrito"></button>
+                    </div>
+                </form>               
             </article>     
         </section>
-        <button><a href="checkout2.html">Continuar <img src="img/flechaDer.png"></a></button>
+        <a href="checkout2.html" class="boton">Continuar <img src="img/flechaDer.png" alt="Flecha derecha"></a>
+
 
         <h2>Productos relacionados</h2>
         <section class="productos-relacionados">
             <article>
                 <h3>París</h3>
                 <p class="precio">Desde 400€</p>
-                <img src="img/paris.jpg">
+                <img src="img/paris.jpg" alt="París">
             </article>
             <article>
                 <h3>Berlín</h3>
                 <p class="precio">Desde 250€</p>
-                <img src="img/berlin.jpg">
+                <img src="img/berlin.jpg" alt="Berlin">
             </article>
             <article>
                 <h3>Tokyo</h3>
                 <p class="precio">Desde 500€</p>
-                <img src="img/tokyo.webp">
+                <img src="img/tokyo.webp" alt="Tokyo">
             </article>
             <article>
                 <h3>Nueva York</h3>
                 <p class="precio">Desde 600€</p>
-                <img src="img/New-York-skyline.webp">
+                <img src="img/New-York-skyline.webp" alt="Nueva York">
             </article>
         </section>
     </main>

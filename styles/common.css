@@ -18,6 +18,7 @@
     .precio{
         width: 35px;
     }
+
 }
 @media screen and (min-width: 857px) and (max-width: 1667px){
     body{
@@ -31,6 +32,7 @@
         width:180px;
         height: 100px;
     }
+
 }
 
 @media screen and (min-width: 1668px){
@@ -45,6 +47,7 @@
         width:300px;
         height: 150px;
     }   
+
 }
 html, body {
     height: 100%;
@@ -84,7 +87,7 @@ h2{
 a{
     text-decoration: none;
 }
-.foto_perfil{
+.foto-perfil{
     width: 25px;
     height: 25px;
 }
@@ -109,7 +112,6 @@ article{
     position: relative;
     border-radius: 10px;
     margin: 15px;
-    font-weight: bold;
 }
 article img{
     border-radius: 10px;
@@ -139,6 +141,13 @@ footer{
 .pointer article,button{
     cursor: pointer;
 }
+img {
+    width: 30%;
+}
 
-
+.carrito img{
+    position: relative;
+    width: 80px;
+    left: 870px;
+}
 
