@@ -15,6 +15,25 @@ table, table th, table td {
 table{
     margin: 0 auto;
 }
-video{
-    width: 30%;
+.equipo-profesional {
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.equipo-profesional img {
+    margin: 2%; 
+}
+.video-y-horario {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+video {
+    width: 45%; 
+    margin-bottom: 2%;
+}
+
+.horario {
+    width: 45%;
 }
