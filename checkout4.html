@@ -89,14 +89,16 @@
         <section>
             <form>
                 <h2>Métodos de pago</h2>
-                <br>
-                <label for="radioCuentaBancaria">Cuenta bancaria <img src="img/banco.png" alt="Icono de banco"></label>
-                <input type="radio" name="pago" id="radioCuentaBancaria">
-                <label for="radioTarjeta">Tarjeta de crédito o débito <img src="img/tarjeta.png" alt="Icono de tarjetas de crédito"></label>
-                <input type="radio" name="pago" id="radioTarjeta">
-                <label for="radioPaypal">Paypal <img src="img/paypal.png" alt="Icono de paypal"></label>
-                <input type="radio" name="pago" id="radioPaypal">
-                
+                <fieldset>
+                    <legend></legend>
+                    <label for="radioCuentaBancaria">Cuenta bancaria <img src="img/banco.png" alt="Icono de banco"></label>
+                    <input type="radio" name="pago" id="radioCuentaBancaria">
+                    <label for="radioTarjeta">Tarjeta de crédito o débito <img src="img/tarjeta.png" alt="Icono de tarjetas de crédito"></label>
+                    <input type="radio" name="pago" id="radioTarjeta">
+                    <label for="radioPaypal">Paypal <img src="img/paypal.png" alt="Icono de paypal"></label>
+                    <input type="radio" name="pago" id="radioPaypal">
+                </fieldset>
+
                 <div id="cuentaBancaria">
                     <label for="idcuenta">Introduzca su cuenta bancaria:</label>
                     <br>
@@ -131,21 +133,23 @@
                 </div>
 
                 <h2>Opciones de envío</h2>
-                <label>Elige una opción de envío:</label>
-                <br>
-                <label for="radioMiCuenta">Esta cuenta <img src="img/perfil.png" alt="Imagen de perfil"></label>
-                <input type="radio" name="envio" id="radioMiCuenta">
-                <label for="radioRegalo">Regalo para un amigo <img src="img/regalo.png" alt="Icono de un regalo"></label>
-                <input type="radio" name="envio" id="radioRegalo"> 
-                <div id="amigo">
-                    <label for="email">Introduzca el email correspondiente:</label>
+                <fieldset>
+                    <label>Elige una opción de envío:</label>
                     <br>
-                    <input type="email" id="email" placeholder="Email">
-                </div>
-                <div>
-                    <a href="checkout3.html" class="boton"><img src="img/flechaIzq.png" alt="Flecha izquierda"> Anterior</a>
-                    <button>Finalizar compra <img src="img/finalizarCompra.png" alt="Finalizar Compra"></button>
-                </div>
+                    <label for="radioMiCuenta">Esta cuenta <img src="img/perfil.png" alt="Imagen de perfil"></label>
+                    <input type="radio" name="envio" id="radioMiCuenta">
+                    <label for="radioRegalo">Regalo para un amigo <img src="img/regalo.png" alt="Icono de un regalo"></label>
+                    <input type="radio" name="envio" id="radioRegalo"> 
+                    <div id="amigo">
+                        <label for="email">Introduzca el email correspondiente:</label>
+                        <br>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <a href="checkout3.html" class="boton"><img src="img/flechaIzq.png" alt="Flecha izquierda"> Anterior</a>
+                        <button>Finalizar compra <img src="img/finalizarCompra.png" alt="Icono que finaliza el proceso de compra"></button>
+                    </div>
+                </fieldset>
             </form>
         </section>
     </main>

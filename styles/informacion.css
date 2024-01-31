@@ -1,39 +1,48 @@
-.grafico {
-    width: 25%;
-    height: 400px;
+section{
+    flex-direction: column;
 }
 img{
     width: 10%;
 }
 table, table th, table td {
-	border: 3px solid ;
+	border: 3px solid;
   	border-collapse: collapse;
-  	padding: 3px;
+  	padding: 2%;
     text-align: center;
 }
-
 table{
     margin: 0 auto;
+    width: 60%;
+}
+table td{
+    width: 2%;
+}
+div img{
+    margin-right: 5%;
+    width: 25%;
 }
 .equipo-profesional {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 25%;
 }
 
 .equipo-profesional img {
-    margin: 2%; 
-}
-.video-y-horario {
-    display: flex;
-    flex-wrap: wrap; 
+    width: 20%; 
+    margin-left: 3%;
 }
 
 video {
     width: 45%; 
-    margin-bottom: 2%;
+}
+a{
+    width: 20%;
+}
+p,video,a{
+    margin: 2%;
 }
 
-.horario {
-    width: 45%;
-}
+
+
+
+
